@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://cdn.tailwindcss.com');
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(254, 254, 254);
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+    height:100vh;
+}
+.h1{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    
+}
+.calculator-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.25rem;
+    padding:1.5rem;
+    border: 1.5rem;
+    border-radius: 1rem;
+    background-color: rgb(72, 87, 107);
+    box-shadow: 1 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    max-width: 400px;
+    width:90%;
+
+}
+
+.display{
+    grid-column: span 4;
+    background-color:#1f2937;
+    color: #f9fafb;
+    font-size: 2.5rem;
+    text-align: right;
+    padding:1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 1rem;
+    word-wrap: break-word;
+    word-break: break-all;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+.history-display {
+    font-size: 1.5rem;
+    color: #9ca3af;
+}
+
+.current-display {
+    font-size: 2.5rem;
+}
+.calculator-button{
+    background-color: #4b5563;
+    color: #f3f4f6;
+    font-size:1.5rem;
+    padding: 1.5rem 0.5rem;
+    border:none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+
+.calculator-button:hover{
+    background-color: #6b7289;
+}
+.calculator-button:active{
+    transform: scale(0.95);
+}
+.operator{
+    background-color: #f59e0b;
+
+}
+
+.operator:hover{
+    background-color: #d97706;
+}
+
+.equals{
+    grid-column: span 3;
+    background-color: #10b981;
+}
+
+.equals:hover{
+    background-color: #059669;
+}
+.clear{
+    background-color: #ef4444;
+}
+
+.clear:hover{
+    background-color: #ff3333b1;
+}
+.backspace{
+    background-color: #0015ff;
+}
+
+.backspace:hover{
+    background-color: #00b0fcb1;
+}
